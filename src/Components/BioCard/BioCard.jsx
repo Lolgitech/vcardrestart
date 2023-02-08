@@ -1,5 +1,5 @@
 import styles from "./biocard.module.css";
-// feil ?import Portrait from "./Portrait";
+
 
 console.log(styles);
 
