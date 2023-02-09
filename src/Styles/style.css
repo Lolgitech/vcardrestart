@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.Card {
+    width: 175px;
+    font-size: 12px;
+
+}
+
+.gray {
+    color: gray;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.card--image {
+    width: 100%;
+    border-radius: 9px;
+}
+
+.Card--stats {
+    display: flex;
+    align-items: center;
+} 
