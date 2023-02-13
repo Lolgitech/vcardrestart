@@ -1,16 +1,25 @@
+import React from "react";
 
 export default function Card(props) {
+  let badgeText;
+  if (props.item.openSpots === 0) {
+    badgeText = "SOLD OUT";
+  } else if (props.item.location === "Online") {
+    badgeText = "ONLINE";
+  }
   return (
-    <div className="Card">
-      <img src={portrait} alt="" />
-      <div className="Card-stats">
-        <span> 180 cm</span>
-        <span className="gray"> age 43</span>
-        <span className="gray"> City Bergen</span>
+    <div className="card">
+      {badgeText && <div className="card--badge">{badgeText}</div>}
+      <img src={`../images/${props.item.coverImg}`} className="card--image" />
+      <div className="card--stats">
+        <img src="../images/star.png" className="card--star" />
+        <span>{props.item.rating}</span>
+        <span className="gray">({props.stats.item.reviewCount}) • </span>
+        <span className="gray">{props.item.location}</span>
       </div>
-      <p> Life lessons</p>
-      <p>
-        <span className="bold">From $136</span> / person
+      <p className="card--title">{props.title}</p>
+      <p className="card--price">
+        <span className="bold">From ${props.price}</span> / person
       </p>
     </div>
   );

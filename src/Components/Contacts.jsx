@@ -1,6 +1,6 @@
 import React from "react";
-import phoneIcon from "../assets/pictures/phone-icon.png";
-import mailIcon from "../assets/pictures/mail-icon.png";
+import phoneIcon from "../assets/images/phone-icon.png";
+import mailIcon from "../assets/images/mail-icon.png";
 
 export default function Contact(props) {
   return (
