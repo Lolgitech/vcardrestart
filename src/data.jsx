@@ -1,5 +1,6 @@
-
-//item
+//import logo from "./assets/images/airbnb-logo.png"
+import katie from "./assets/images/katie-zaferes.png";
+import wedding from "./assets/images/wedding-photography.png";
 
 export default [
   {
@@ -8,7 +9,7 @@ export default [
     description:
       'I will share with you what I call "Positively Impactful Moments of Disappointment." Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.',
     price: 136,
-    coverImg: "katie-zaferes.png",
+    coverImg: katie,
     stats: {
       rating: 5.0,
       reviewCount: 6,
@@ -22,7 +23,7 @@ export default [
     description:
       "Interested in becoming a wedding photographer? For beginner and experienced photographers alike, join us in learning techniques required to leave the happy couple with memories that'll last a lifetime.",
     price: 125,
-    coverImg: "wedding-photography.png",
+    coverImg: wedding,
     stats: {
       rating: 5.0,
       reviewCount: 30,
@@ -46,9 +47,8 @@ export default [
   },
 ];
 
-
-
-{/* <div className="Contacts">
+{
+  /* <div className="Contacts">
       <Contact
         img={felix}
         name="bob"
@@ -83,4 +83,5 @@ export default [
       />
     </div>
   );
-} */}
+} */
+}

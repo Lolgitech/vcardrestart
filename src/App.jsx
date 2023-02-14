@@ -6,14 +6,12 @@ import data from "./data.jsx";
 import Navbar from "./Components/navbar.jsx";
 
 export default function App() {
-  // <Hero />;
   const cards = data.map((item) => {
     return (
       <Card
         key={item.id}
         item={item}
         // or {...item}
-
 
         // img={item.coverImg}
         // rating={item.stats.rating}
@@ -29,6 +27,7 @@ export default function App() {
   return (
     <div>
       <Navbar />
+      <Hero />;
       <section className="cards-list">{cards}</section>
     </div>
   );
