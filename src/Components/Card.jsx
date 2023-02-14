@@ -7,7 +7,7 @@ export default function Card(props) {
   if (props.item.openSpots === 0) {
     badgeText = "SOLD OUT";
   } else if (props.item.location === "Online") {
-    badgeText = "ONLINE";
+    badgeText = "AVAILABLE";
   }
   return (
     <div className="card">
@@ -19,9 +19,9 @@ export default function Card(props) {
         <span className="gray">({props.item.stats.reviewCount}) </span>
         <span className="gray">{props.item.location}</span>
       </div>
-      <p className="card--title">{props.title}</p>
+      <p className="card--title">{props.item.title}</p>
       <p className="card--price">
-        <span className="bold">From ${props.price}</span> / person
+        <span className="bold">From ${props.item.price}</span> / person
       </p>
     </div>
   );

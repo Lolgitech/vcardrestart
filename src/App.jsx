@@ -3,8 +3,8 @@ import Hero from "./Components/Hero.jsx";
 import Card from "./Components/Card.jsx";
 //import Contacts from "./Components/Contacts.jsx";
 import data from "./data.jsx";
-import Navbar from "./Components/navbar.jsx";
-import styles from "./Styles/style.css?innline"
+import Navbar from "./Components/navbar/navbar.jsx";
+import styles from "./Styles/style.css?innline";
 
 export default function App() {
   const cards = data.map((item) => {
@@ -28,8 +28,7 @@ export default function App() {
   return (
     <div>
       <Navbar />
-      <Hero />;
-      <section className="cards-list">{cards}</section>
+      <Hero />;<section className="cards-list">{cards}</section>
     </div>
   );
 }
