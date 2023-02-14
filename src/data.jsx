@@ -1,6 +1,7 @@
 //import logo from "./assets/images/airbnb-logo.png"
 import katie from "./assets/images/katie-zaferes.png";
 import wedding from "./assets/images/wedding-photography.png";
+import mountainbike from "./assets/images/mountain-bike.png";
 
 export default [
   {
@@ -37,7 +38,7 @@ export default [
     description:
       "Experience the beautiful Norwegian landscape and meet new friends all while conquering rugged terrain on your mountain bike. (Bike provided!)",
     price: 50,
-    coverImg: "mountain-bike.png",
+    coverImg: mountainbike,
     stats: {
       rating: 4.8,
       reviewCount: 2,

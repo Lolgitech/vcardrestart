@@ -4,6 +4,7 @@ import Card from "./Components/Card.jsx";
 //import Contacts from "./Components/Contacts.jsx";
 import data from "./data.jsx";
 import Navbar from "./Components/navbar.jsx";
+import styles from "./Styles/style.css?innline"
 
 export default function App() {
   const cards = data.map((item) => {
